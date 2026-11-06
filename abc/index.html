@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Igl Poojasri ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BACKGROUND EFFECTS -->
+    <div id="floatingHearts"></div>
+    <div id="petalContainer"></div>
+
+    <!-- MUSIC -->
+    <audio id="backgroundMusic" loop>
+        <source src="music/Munbe Vaa - Instrumental.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton" class="music-button">
+        <span id="musicIcon">♫</span>
+        <span id="musicLabel">Play Music</span>
+    </button>
+
+    <!-- SCREEN 1: WELCOME -->
+    <section id="welcome" class="screen active">
+        <div class="welcome-content">
+
+            <p class="small-heading">
+                A little surprise for someone special
+            </p>
+
+            <h1 class="glow-title">
+                Happy Birthday
+                <span>Igl Poojasri</span>
+            </h1>
+
+            <p class="welcome-message">
+                Today is all about you. I have something special waiting for you. 💗
+            </p>
+
+            <button id="envelope" class="envelope-button">
+                <span class="envelope-heart">♥</span>
+                <span class="envelope-text">Open Your Surprise</span>
+            </button>
+
+            <p id="envelopeCaption" class="caption">
+                Tap the envelope to begin ✨
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 2: BALLOONS -->
+    <section id="balloonSection" class="screen">
+        <div class="section-content">
+
+            <p class="small-heading">A little something from my heart</p>
+
+            <h2 class="section-title">Pop the Balloons 🎈</h2>
+
+            <p class="section-description">
+                Each balloon has a little message for you. Tap them one by one! 💕
+            </p>
+
+            <div class="balloon-container">
+
+                <button class="balloon balloon-pink"
+                    data-message="Your notification turns my bad day beautiful. 😊💗">
+                    ♥
+                </button>
+
+                <button class="balloon balloon-purple"
+                    data-message="Some feelings are bloom in silence 💖">
+                    ♥
+                </button>
+
+                <button class="balloon balloon-peach"
+                    data-message="Even a few minutes of call or chat with you mean so much to me. 🥹">
+                    ♥
+                </button>
+
+                <button class="balloon balloon-lavender"
+                    data-message="Some feeling are easier to draw than say ❤️🎂">
+                    ♥
+                </button>
+
+                <button class="balloon balloon-rose"
+                    data-message=".. ">
+                    ♥
+                </button>
+
+            </div>
+
+            <div id="messageBox" class="message-box">
+                Your special message will appear here 💌
+            </div>
+
+            <p id="balloonCounter" class="balloon-counter">
+                0 / 5 balloons popped
+            </p>
+
+            <button id="letterButton" class="main-button" disabled>
+                Read My Letter 💌
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- SCREEN 3: PERSONAL LETTER -->
+    <section id="letterSection" class="screen">
+
+        <div class="letter-card">
+
+            <div class="letter-decoration">🌸</div>
+
+            <p class="letter-label">A letter from my heart</p>
+
+            <h2 class="letter-title">Dear Igl Poojasri, 🩷</h2>
+
+            <div class="letter-body">
+
+                <p>Igl, read this fully for me. 🥹</p>
+
+                <p>
+                    You are my Igl, and I'm so grateful to have you in my life.
+                    🤍 You bring so much warmth ☀️ and sweetness 🍭 into my life.
+                </p>
+
+                <p>
+                    Every moment with you is precious 🕊️💖. Even when we talk
+                    for just 3 or 4 minutes, those little moments mean so much
+                    to me. 🥹💫
+                </p>
+
+                <p>
+                    When I feel depressed 😭, you become my healer 🩹.
+                    Just seeing your message brings me so much joy 😊💌,
+                    and I start smiling 😁 without even realizing it 🌸✨.
+                </p>
+
+                <p>
+                    Every little moment, every smile 😊, and every glimpse
+                    of you stays in my heart longer than you could ever imagine. 💗
+                </p>
+
+                <p>
+                    Maybe it's just a sketch to you 🎨, but every line holds
+                    a little secret my heart will never tell as a word 🥹❤️‍🩹.
+                </p>
+
+                <p>
+                    I have a small request: please don't leave me like everyone
+                    else does. People usually come and go only when they need
+                    something from me, and once their work is done, they leave.
+                    I'm sure you understand.
+                </p>
+
+                <p class="letter-birthday">
+                    Happy Birthday Poojasri! 🎂
+                </p>
+
+                <p>
+                    You will always hold a special place in my heart. ❤️
+                </p>
+
+            </div>
+
+            <div class="letter-signature">
+                <p>With lots of care,</p>
+                <h3>Your Mohan ❤️</h3>
+            </div>
+
+            <button id="cakeButton" class="main-button">
+                One More Surprise 🎂
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- SCREEN 4: BIRTHDAY CAKE -->
+    <section id="cakeSection" class="screen">
+
+        <div class="cake-content">
+
+            <p class="small-heading">The sweetest part of the day</p>
+
+            <h2 class="section-title">Make a Wish, Igl! 💗</h2>
+
+            <p class="section-description">
+                It's your 19th birthday! Make a wish. ✨
+            </p>
+
+            <!-- CAKE -->
+            <div class="cake-stage">
+
+                <div class="cake-scene">
+
+                    <div class="cake-shadow"></div>
+
+                    <div class="real-cake" id="cake">
+
+                        <div class="cake-layer cake-bottom-layer">
+                            <div class="sponge-layer"></div>
+                            <div class="cream-layer"></div>
+                            <div class="frosting-side"></div>
+                        </div>
+
+                        <div class="cake-layer cake-middle-layer">
+                            <div class="sponge-layer"></div>
+                            <div class="cream-layer"></div>
+                            <div class="frosting-side"></div>
+                        </div>
+
+                        <div class="cake-layer cake-top-layer">
+                            <div class="sponge-layer"></div>
+                            <div class="cream-layer"></div>
+                            <div class="frosting-side"></div>
+                        </div>
+
+                        <div class="cake-top-surface"></div>
+
+                        <div class="icing-drips">
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                            <span></span><span></span><span></span>
+                        </div>
+
+                        <div class="cream-decorations">
+                            <span>✿</span><span>✿</span><span>✿</span>
+                            <span>✿</span><span>✿</span><span>✿</span>
+                        </div>
+
+                        <div class="strawberries">
+                            <span>🍓</span>
+                            <span>🍓</span>
+                            <span>🍓</span>
+                        </div>
+
+                        <div class="cake-message">19</div>
+
+                        <div class="candles" id="candles"></div>
+
+                        <div class="real-cake-slice" id="cakeSlice">
+                            <div class="slice-cream"></div>
+                        </div>
+
+                    </div>
+
+                    <div class="real-cake-plate">
+                        <div class="plate-highlight"></div>
+                    </div>
+
+                    <div class="cake-knife" id="cakeKnife">
+                        <div class="knife-handle"></div>
+                        <div class="knife-blade"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <p id="cakeInstruction" class="cake-instruction">
+                First, close your eyes and make a beautiful wish! 🥹
+            </p>
+
+            <div class="cake-buttons">
+
+                <button id="blowButton" class="main-button">
+                    Blow the Candles 🌬️
+                </button>
+
+                <button id="cutButton" class="main-button cut-button" disabled>
+                    Cut the Cake 🔪
+                </button>
+
+            </div>
+
+            <!-- FINAL CELEBRATION -->
+            <div id="cakeCelebration" class="cake-celebration" hidden>
+
+                <h2>Happy 19th Birthday, Igl! 🎉</h2>
+
+                <p>
+                    You are special. Never forget that! 💗
+                </p>
+
+                <!-- SURPRISE GIFT -->
+                <div class="gift-area">
+
+                    <p class="gift-heading">
+                        Wait... one last surprise for you! 🎁
+                    </p>
+
+                    <button id="giftButton" class="gift-box">
+                        <span id="giftEmoji">🎁</span>
+                        <small>Open Your Gift</small>
+                    </button>
+
+                    <div id="giftMessage" class="gift-message" hidden>
+
+                        <h3>For My Special Igl ❤️</h3>
+
+                        <p>
+                            No gift can explain how special you are to me.
+                            Keep smiling, keep shining, and always be happy.
+                            You deserve all the happiness in this world! 🥹💗
+                        </p>
+
+                        <p class="gift-signature">
+                            With love, Mohan ❤️
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <button id="restartButton" class="main-button">
+                    Celebrate Again ❤️
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
